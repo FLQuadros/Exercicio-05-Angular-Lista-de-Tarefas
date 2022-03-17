@@ -1,0 +1,70 @@
+.input-btn {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+
+}
+
+input {
+    width: 300px;
+    padding-left: 10px;
+    font-size: 18px;
+
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    background-color: #8D4AE7;
+    font-size: 40px;
+    height: 45px;
+    width: 45px;
+    margin-left: 5px;
+}
+
+.item {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    background-color: #F2F2F2;
+
+}
+
+.item p {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.item button {
+    background-color: #E64D3E;
+    color: white;
+    width: 50px;
+    border: none;
+
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.container2 p {
+    width: 100%;
+}
+
+.scrollbar {
+    overflow-y: auto;
+}
