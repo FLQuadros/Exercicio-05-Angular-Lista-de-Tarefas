@@ -1,7 +1,7 @@
 <div class="input-btn">
     <div class="container">
-        <input matInput type="text" placeholder="Add you new todo" #inputToDo>
-        <button type="submit" class="btn" (click)="adicionarToDo(inputToDo.value); resetarInput()" (keyup.enter)="adicionarToDo(inputToDo.value)">+</button>
+        <input matInput type="text" placeholder="Adicione uma tarefa" autocomplete="off" #inputToDo (keyup.enter)="adicionarToDo(inputToDo.value); resetarInput()">
+        <button type="submit" class="btn" (click)="adicionarToDo(inputToDo.value); resetarInput()" >+</button>
     </div>
 
     <div class="scrollbar" [ngStyle]="{'height': '250px', 'margin-top': '10px'}">
@@ -12,8 +12,8 @@
     </div>
 
     <div class="container2">
-        <p>You have {{ toDoItens.length }} pending tanks</p>
-        <button mat-button StyledBtn (click)="removerTodos()">Clear All</button>
+        <p>Você tem {{ toDoItens.length }} tarefas pendentes</p>
+        <button mat-button StyledBtn (click)="removerTodos()">Limpar</button>
     </div>
 
 

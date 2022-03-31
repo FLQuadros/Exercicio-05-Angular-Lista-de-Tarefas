@@ -12,11 +12,11 @@ export class AppComponent {
   constructor(private snack: MatSnackBar) {}
 
   removerToDoItem(): void {
-    this.snack.open('A tarefa foi excluída.', 'Ok')
+    this.snack.open('A tarefa foi excluída.', 'Ok', {duration: 3000})
   }
 
   removerAllToDoItens(): void {
-    this.snack.open('Todas as tarefas foram excluídas.', 'Ok')
+    this.snack.open('Todas as tarefas foram excluídas.', 'Ok', {duration: 3000})
   }
 
   
